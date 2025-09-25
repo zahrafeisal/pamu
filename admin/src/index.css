@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Admin Panel Design System - Professional & Modern */
+
+@layer base {
+  :root {
+    /* Core Backgrounds */
+    --background: 250 50% 98%;
+    --foreground: 240 10% 15%;
+
+    /* Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 15%;
+
+    /* Popover & Overlays */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 15%;
+
+    /* Primary Brand - Deep Indigo */
+    --primary: 235 75% 28%;
+    --primary-light: 235 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Professional Gray */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 15%;
+
+    /* Muted Elements */
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 64%;
+
+    /* Accent - Purple Gradient */
+    --accent: 260 85% 65%;
+    --accent-light: 280 90% 75%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 240 10% 90%;
+    --input: 240 10% 95%;
+    --ring: 235 75% 28%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(235, 75%, 28%), hsl(260, 85%, 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(235, 75%, 28%) 0%, hsl(260, 85%, 65%) 50%, hsl(280, 90%, 75%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(240, 5%, 98%) 100%);
+    --gradient-sidebar: linear-gradient(180deg, hsl(235, 75%, 28%) 0%, hsl(235, 65%, 22%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(235, 75%, 28%, 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(235, 75%, 28%, 0.1), 0 2px 4px -1px hsl(235, 75%, 28%, 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(235, 75%, 28%, 0.1), 0 4px 6px -2px hsl(235, 75%, 28%, 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(235, 75%, 28%, 0.1), 0 10px 10px -5px hsl(235, 75%, 28%, 0.04);
+    --shadow-glow: 0 0 40px hsl(235, 75%, 28%, 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark mode styles */
+    --background: 235 30% 8%;
+    --foreground: 240 5% 95%;
+    --card: 235 25% 12%;
+    --card-foreground: 240 5% 95%;
+    --primary: 235 60% 45%;
+    --accent: 260 70% 60%;
+    --muted: 235 15% 20%;
+    --muted-foreground: 240 5% 64%;
+    --border: 235 20% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  /* Custom gradient backgrounds */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .bg-gradient-sidebar {
+    background: var(--gradient-sidebar);
+  }
+
+  /* Custom shadows */
+  .shadow-custom-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .shadow-custom-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-custom-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .shadow-custom-xl {
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Glass effects */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+}
