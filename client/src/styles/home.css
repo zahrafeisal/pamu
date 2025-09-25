@@ -1,0 +1,10 @@
+.rev_slider_wrapper {
+  position: relative !important;
+  z-index: 1;
+  height: 100vh; /* still full screen */
+}
+
+#body-content, section {
+  position: relative;
+  z-index: 2;
+}

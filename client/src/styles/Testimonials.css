@@ -1,0 +1,92 @@
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonials .heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.testimonials .heading span {
+  display: block;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.testimonials .heading {
+  margin-bottom: 40px;
+}
+
+.testimonials .heading h1 {
+  color: #a91e1e; /* red for "Customers Saying" */
+}
+
+.testimonial-card {
+  background: #f9f9f9;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 800px; /* wider box */
+  border-radius: 10px;
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 4px solid #0a1f44; /* navy border */
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-card footer {
+  font-weight: bold;
+  color: #3da9fc; /* light blue for reviewer name */
+}
+
+/* Callout Section */
+.callout {
+  background: #0a1f44; /* navy blue */
+  color: #fff;
+  padding: 60px 40px; /* more space on left/right */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.callout-content {
+  max-width: 750px; /* slightly wider */
+}
+
+.callout h4 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.callout p {
+  font-size: 1rem;
+}
+
+.callout-btn {
+  background: #fff;
+  color: #0a1f44;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-right: 20px; /* spacing from right */
+}
+
+.callout-btn:hover {
+  background: #ddd;
+}

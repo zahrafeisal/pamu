@@ -1,0 +1,79 @@
+/* === Awards Section === */
+.awards-section {
+  padding: 80px 0;
+  background-color: #f9fafb; /* light background like old site */
+}
+
+.awards-section .heading {
+  margin-bottom: 50px;
+}
+
+.awards-section .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #a2352b; /* brand red */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.awards-section .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c5c82; /* dark blue brand */
+  line-height: 1.3;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.award-item {
+  position: relative;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.award-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #2b5b81; /* deep blue */
+  color: #fff;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-icon {
+  margin-bottom: 15px;
+}
+
+.award-icon .icon {
+  width: 40px;
+  height: 40px;
+  color: #a2352b; /* red icon */
+}
+
+.award-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.5;
+}
